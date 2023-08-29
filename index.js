@@ -12,20 +12,28 @@ try {
     switch (actionToRun) {
         case 'set-git-credentials':
             setGitCredentials();
+            break;
         case 'release-check':
             releaseCheck(releaseString);
+            break;
         case 'approvals-check':
             approvalsCheck(minApprovals);
+            break;
         case 'check-for-conflicts':
             checkForConflicts();
+            break;
         case 'get-diffs':
             getDiffs();
+            break;
         case 'generate-release-package':
             generateReleasePackage();
+            break;
         case 'authorize-into-salesforce':
             authorizeIntoSalesforce();
+            break;
         case 'validation-changes':
             validationChanges();
+            break;
         default:
     }
 } catch (error) {

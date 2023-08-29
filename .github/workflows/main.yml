@@ -7,41 +7,41 @@ jobs:
     steps:
       - name: setGitCredentials
         id: setGitCredentials
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
           action-to-run: 'set-git-credentials'
       - name: releaseCheck
         id: releaseCheck
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
           action-to-run: 'release-check'
       - name: approvalsCheck
         id: approvalsCheck
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
           action-to-run: 'approvals-check'
       - name: checkForConflicts
         id: checkForConflicts
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
             action-to-run: 'check-for-conflicts'
       - name: getDiffs
         id: getDiffs
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
             action-to-run: 'get-diffs'
       - name: generateReleasePackage
         id: generateReleasePackage
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
           action-to-run: 'generate-release-package'
       - name: authorizeIntoSalesforce
         id: authorizeIntoSalesforce
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
           action-to-run: 'authorize-into-salesforce'
       - name: validationChanges
         id: validationChanges
-        uses: lukenvang/hello-world-javascript-action@v1.5
+        uses: lukenvang/hello-world-javascript-action@v1.6
         with:
           action-to-run: 'validation-changes'
