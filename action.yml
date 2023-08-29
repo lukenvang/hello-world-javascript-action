@@ -1,13 +1,21 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: "Hello World"
+description: "Greet someone and record the time"
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  action-to-run: # id of input
+    description: "Action Name"
     required: true
-    default: 'World'
+    default: "set-git-credentials"
+  release-string: # id of input
+    description: "The release string to check against"
+    required: true
+    default: "release"
+  min-approvals: # id of input
+    description: "The minimin amount of approvals needed for job to run"
+    required: true
+    default: "0"
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: "The time we greeted you"
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: "node16"
+  main: "index.js"
