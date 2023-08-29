@@ -4,7 +4,11 @@ const github = require('@actions/github');
 try {
     // `who-to-greet` input defined in action metadata file
     const actionToRun = core.getInput('action-to-run');
+    const releaseString = core.getInput('release-string');
+    const minApprovals = core.getInput('min-approvals');
     console.log(`Running ${actionToRun} action`);
+    console.log(releaseString);
+    console.log(minApprovals);
     switch (actionToRun) {
         case 'set-git-credentials':
             setGitCredentials();
