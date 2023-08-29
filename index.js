@@ -13,9 +13,9 @@ try {
         case 'set-git-credentials':
             setGitCredentials();
         case 'release-check':
-            releaseCheck();
+            releaseCheck(releaseString);
         case 'approvals-check':
-            approvalsCheck();
+            approvalsCheck(minApprovals);
         case 'check-for-conflicts':
             checkForConflicts();
         case 'get-diffs':
