@@ -15,7 +15,7 @@ try {
   core.setFailed(error.message);
 }
 
-function test()
+async function test()
 {
     console.log("test");
 }
